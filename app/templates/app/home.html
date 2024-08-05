@@ -1,0 +1,220 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/b1.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b2.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/b3.webp' %}" class="d-block w-100" alt="banner image">
+      </div>
+      
+      
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+{% endblock banner-slider %}
+{% block information %}
+<div class="container">
+     <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+    <h1>Products</h1>
+    <small class="fs-5">BigBasket.com with 18000+ products and 1000+ brands listed on their catalogue is known to be India's largest online food and grocery store.</small>
+     </div>
+</div>
+
+{% endblock information %}
+{% block main-content %}
+<div class="container ">
+    <h2 class="container">All products</h2>
+    <br><br>
+    <div class="row container">
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'VG' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/product/pro1.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                    <p class="milkpro">Capsicum - Green (Loose)</p>
+                </div>
+            </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+            <div class="goodnesssec curdbgpro">
+                <a href="{% url 'category' 'VG' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/pro2.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                        <p class="milkpro">Carrot - Orange (Loose)</p>
+                    </div>
+                </a>
+            </div>
+        </div>    
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                <div class="goodnesssec buttermilk buttermilk">
+                    <a href="{% url 'category' 'VG' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/pro3.webp' %}"class="img-responsive center-block"  alt="" height="400" width="400">
+                            <p class="milkpro">Cauliflower</p>
+                        </div>
+                    </a>
+            </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                    <div class="goodnesssec buttermilk smbg">
+                        <a href="{% url 'category' 'VG' %}">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'app/images/product/pro4.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                                <p class="milkpro">Coriander Leaves</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                        <div class="goodnesssec curdbgpro">
+                            <a href="{% url 'category' 'BH' %}">
+                                <div class="goodnessseccont text-center">
+                                    <img src="{% static 'app/images/product/pro5.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                                    <p class="milkpro">Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin E</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>    
+                        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                            <div class="goodnesssec buttermilk buttermilk">
+                                <a href="{% url 'category' 'BH' %}">
+                                    <div class="goodnessseccont text-center">
+                                        <img src="{% static 'app/images/product/pro6.webp' %}"class="img-responsive center-block"  alt="" height="400" width="400">
+                                        <p class="milkpro">Baby Wipes - With Aloe</p>
+                                    </div>
+                                </a>
+                        </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+        <div class="goodnesssec buttermilk smbg">
+            <a href="{% url 'category' 'VG' %}">
+                <div class="goodnessseccont text-center">
+                    <img src="{% static 'app/images/product/pro1.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                    <p class="milkpro">Capsicum - Green (Loose)</p>
+                </div>
+            </a>
+        </div>
+        </div>
+        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+            <div class="goodnesssec curdbgpro">
+                <a href="{% url 'category' 'VG' %}">
+                    <div class="goodnessseccont text-center">
+                        <img src="{% static 'app/images/product/pro2.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                        <p class="milkpro">Carrot - Orange (Loose)</p>
+                    </div>
+                </a>
+            </div>
+        </div>    
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                <div class="goodnesssec buttermilk buttermilk">
+                    <a href="{% url 'category' 'VG' %}">
+                        <div class="goodnessseccont text-center">
+                            <img src="{% static 'app/images/product/pro3.webp' %}"class="img-responsive center-block"  alt="" height="400" width="400">
+                            <p class="milkpro">Cauliflower</p>
+                        </div>
+                    </a>
+            </div>
+                </div>
+                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                    <div class="goodnesssec buttermilk smbg">
+                        <a href="{% url 'category' 'VG' %}">
+                            <div class="goodnessseccont text-center">
+                                <img src="{% static 'app/images/product/pro4.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                                <p class="milkpro">Coriander Leaves</p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                        <div class="goodnesssec curdbgpro">
+                            <a href="{% url 'category' 'BH' %}">
+                                <div class="goodnessseccont text-center">
+                                    <img src="{% static 'app/images/product/pro5.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                                    <p class="milkpro">Baby Wipes - With Aloe Vera, Jojoba Oil & Vitamin E</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                        <div class="goodnesssec buttermilk smbg">
+                            <a href="{% url 'category' 'BH' %}">
+                                <div class="goodnessseccont text-center">
+                                    <img src="{% static 'app/images/product/pro6.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                                    <p class="milkpro">Baby Wipes - With Aloe</p>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                            <div class="goodnesssec curdbgpro">
+                                <a href="{% url 'category' 'BH' %}">
+                                    <div class="goodnessseccont text-center">
+                                        <img src="{% static 'app/images/product/pro7.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                                        <p class="milkpro">Baby Wipes - Fresh, No Paraben, Double Moisturising</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>    
+                            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                                <div class="goodnesssec buttermilk buttermilk">
+                                    <a href="{% url 'category' 'VG' %}">
+                                        <div class="goodnessseccont text-center">
+                                            <img src="{% static 'app/images/product/pro8.webp' %}"class="img-responsive center-block"  alt="" height="400" width="400">
+                                            <p class="milkpro"></p>
+                                        </div>
+                                    </a>
+                            </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                                    <div class="goodnesssec buttermilk smbg">
+                                        <a href="{% url 'category' 'FR' %}">
+                                            <div class="goodnessseccont text-center">
+                                                <img src="{% static 'app/images/product/pro9.webp' %}"class="img-responsive " alt="" height="400" width="400">
+                                                <p class="milkpro"></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp"data-wow-duration="1s"data-wow-delay="0.6s"style="animation-duration:1s;animation-delay:0.6s;animation-name:none;">
+                                        <div class="goodnesssec curdbgpro">
+                                            <a href="{% url 'category' 'FR' %}">
+                                                <div class="goodnessseccont text-center">
+                                                    <img src="{% static 'app/images/product/pro10.webp' %}"class="img-responsive center-block" alt="" height="400" width="400">
+                                                    <p class="milkpro"></p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>               
+
+        
+        </div>
+
+    </div>
+
+
+</div>
+<br/><br/>
+
+{% endblock main-content %}
